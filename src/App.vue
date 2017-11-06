@@ -31,7 +31,7 @@
   import ResumePreview from './components/ResumePreview'
   import icons from './assets/icons'
   import store from './store/index'
-
+  
 
 
 
@@ -123,7 +123,7 @@ export default {
        avTodos.setACL(acl)
        avTodos.save().then( (resume)=> {
          this.resume.id = resume.id
-         console.log(todo.id)
+        alert("保存成功")
        }, function (error) {
          alert('保存失败');
        });
@@ -169,8 +169,7 @@ export default {
        this.currentUser = null
        window.location.reload()
       },
-
-     
+         
   }
 
  

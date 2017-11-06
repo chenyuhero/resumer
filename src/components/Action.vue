@@ -6,7 +6,7 @@
 				<li class="hideblock">占位</li>	
 				<li @click="preview" >预览</li>
 				<li class="hideblock">占位</li>
-				<li >打印</li>
+				<li @click="printpage">打印</li>
 				<li class="hideblock">占位</li>	
 				<li >下载</li>
 				<li class="hideblock">占位</li>
@@ -36,6 +36,9 @@
 			},
 			change(i){
 				this.resume.currentColor = i
+			},
+			 printpage() {
+			    			    		
 			}
 			
 		}
